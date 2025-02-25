@@ -1,7 +1,7 @@
 # Backend
 
 This is a sample FastAPI-based application for managing products, orders, and order products. It includes CRUD APIs, database integration using SQLAlchemy, Pydantic models for data validation, caching with Redis, and a CI/CD pipeline using GitHub Actions.
-
+SELF STUDY!
 ---
 
 ## 🛠️ Features
