@@ -1,0 +1,1085 @@
+2025-02-14 15:28:33,736 - my_logger - ERROR - Rollback session: [Errno -3] Temporary failure in name resolution
+2025-02-14 15:30:11,629 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:30:11,645 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:30:20,484 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:30:23,782 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:30:56,171 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:31:54,638 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'is_dirty'
+2025-02-14 15:40:30,220 - my_logger - ERROR - Rollback session: 'AsyncSession' object has no attribute 'dirt'
+2025-02-14 15:43:49,796 - my_logger - ERROR - Rollback session: 'sqlalchemy.cyextension.collections.IdentitySet' object is not callable
+2025-02-14 15:44:27,480 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:44:38,129 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:44:45,700 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:44:49,562 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:44:51,831 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:45:00,619 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:45:00,822 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:45:05,569 - my_logger - ERROR - Rollback session: When initializing mapper Mapper[Order(orders)], expression 'OrderProduct' failed to locate a name ('OrderProduct'). If this is a class name, consider adding this relationship() to the <class 'app.models.orders.Order'> class after both dependent classes have been defined.
+2025-02-14 15:47:39,736 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:47:50,051 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:47:50,237 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:47:54,967 - my_logger - ERROR - Rollback session: When initializing mapper Mapper[Product(products)], expression 'OrderProduct' failed to locate a name ('OrderProduct'). If this is a class name, consider adding this relationship() to the <class 'app.models.products.Product'> class after both dependent classes have been defined.
+2025-02-14 15:48:18,867 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:48:26,163 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:48:26,339 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:48:30,053 - my_logger - ERROR - Rollback session: Mapper 'Mapper[OrdersProducts(orders_products)]' has no property 'order'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-02-14 15:50:10,508 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:50:16,671 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:50:16,774 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:50:21,122 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 15:56:58,359 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:56:58,471 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:57:02,998 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:57:03,100 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 15:57:54,605 - my_logger - ERROR - Rollback session: Unable to apply constraint 'max_length' to supplied value 2
+2025-02-14 15:57:56,757 - my_logger - ERROR - Rollback session: Unable to apply constraint 'max_length' to supplied value 2
+2025-02-14 16:02:56,479 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: 2 (expected str, got int)
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Iphone 11', 2, 1, 0)]
+(Backgro
+2025-02-14 16:03:33,019 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:03:33,133 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:06:43,787 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:06:43,902 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:07:22,052 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: 1 (expected str, got int)
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::VARCHAR, $3::VARCHAR, $4::VARCHAR) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('string', 1, 1, 1)]
+(Background
+2025-02-14 16:11:33,934 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:12:18,023 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:12:45,423 - my_logger - ERROR - Rollback session: module 'app.crud.order_product' has no attribute 'create'
+2025-02-14 16:17:38,552 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $3: 100 (expected str, got int)
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::VARCHAR) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 100)]
+(Backgr
+2025-02-14 16:18:32,865 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:21:49,614 - my_logger - ERROR - Rollback session: 'dict' object has no attribute 'model_dump'
+2025-02-14 16:25:48,079 - my_logger - ERROR - Rollback session: 4 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+  {'type': 'model_attributes_type', 'loc': ('response', 1), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+  {'type': 'model_attributes_type', 'loc': ('response', 2), 'msg': 'Input should be a valid dictionary or object to extract
+2025-02-14 16:26:45,662 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-14 16:27:50,739 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:28:25,143 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-14 16:28:55,339 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:05,591 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:05,714 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:08,413 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:08,514 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:29:33,703 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-14 16:31:04,840 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-14 16:32:27,189 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-14 16:56:11,255 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:57:53,953 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:58:09,983 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-14 16:58:58,689 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 09:20:27,700 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 09:20:37,928 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 09:20:38,078 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 09:22:15,201 - my_logger - ERROR - Rollback session: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+2025-02-15 09:22:18,930 - my_logger - ERROR - Rollback session: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+2025-02-15 10:46:21,093 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 10:46:57,953 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 10:53:05,174 - my_logger - ERROR - Rollback session: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+2025-02-15 10:55:11,426 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:05:26,602 - my_logger - ERROR - Rollback session: 'dict' object has no attribute 'model_dump'
+2025-02-15 11:05:53,077 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:07:18,496 - my_logger - ERROR - Rollback session: 'dict' object has no attribute 'model_dump'
+2025-02-15 11:08:30,133 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:08:42,359 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:08:53,743 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:12:33,683 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:14:24,808 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:20:47,908 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:22:45,686 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:23:51,595 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:24:04,814 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:24:10,625 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:24:12,306 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:24:21,224 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:24:26,658 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:24:31,819 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:25:46,622 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:28:31,985 - my_logger - ERROR - Rollback session: 'ProductSchemaCreate' object has no attribute 'model'
+2025-02-15 11:30:45,553 - my_logger - ERROR - Rollback session: 'ProductSchemaCreate' object has no attribute 'model'
+2025-02-15 11:31:44,157 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:32:52,569 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:33:27,984 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:34:44,217 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:35:05,136 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:35:05,255 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 11:35:14,868 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:35:16,060 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:36:33,451 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': True}
+
+2025-02-15 11:38:31,618 - my_logger - ERROR - Rollback session: This result object does not return rows. It has been closed automatically.
+2025-02-15 11:39:13,426 - my_logger - ERROR - Rollback session: 1 validation errors:
+  {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': None}
+
+2025-02-15 11:40:01,081 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:40:15,161 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 11:40:16,229 - my_logger - DEBUG - Session is dirty or in transaction. Commit!
+2025-02-15 12:14:35,794 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-15 12:17:06,116 - my_logger - DEBUG - No changes, no need to commit.
+2025-02-16 15:55:26,931 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 5
+2025-02-16 15:55:27,449 - my_logger - ERROR - Rollback session: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:789]> got Future <Future pendi
+2025-02-16 15:55:27,893 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('
+2025-02-16 15:55:28,366 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('
+2025-02-16 15:55:28,772 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER), (now(), $5::VARCHAR, $6::NUMERIC(15, 2), $7::NUMERIC(15, 2), $8::INTEGER)]
+[parameters: ('Product 1', 10.0, 5.0, 50, 'Product 2'
+2025-02-16 15:55:29,203 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: SELECT count(*) AS count_1 
+FROM products]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:00:12,873 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 5
+2025-02-16 16:00:13,339 - my_logger - ERROR - Rollback session: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:789]> got Future <Future pendi
+2025-02-16 16:00:13,739 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('
+2025-02-16 16:00:14,170 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('
+2025-02-16 16:00:14,538 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER), (now(), $5::VARCHAR, $6::NUMERIC(15, 2), $7::NUMERIC(15, 2), $8::INTEGER)]
+[parameters: ('Product 1', 10.0, 5.0, 50, 'Product 2'
+2025-02-16 16:00:14,937 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: SELECT count(*) AS count_1 
+FROM products]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:11:24,758 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "orders_products" does not exist
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background
+2025-02-16 16:11:25,223 - my_logger - ERROR - Rollback session: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:789]> got Future <Future pendi
+2025-02-16 16:11:25,621 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1,
+2025-02-16 16:11:26,053 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1,
+2025-02-16 16:11:26,487 - my_logger - ERROR - Rollback session: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: SELECT count(*) AS count_1 
+FROM orders_products]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:49:51,929 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "orders_products" does not exist
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-16 16:49:51,939 - my_logger - ERROR - Unexpected error occurred: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:789]> got Future <Future pending cb=[Protocol._on_waiter_completed()]> attached to a different loop
+2025-02-16 16:49:51,949 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:49:51,957 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:49:51,973 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:49:51,981 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:49:51,990 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('To Delete', 50.0, 20.0, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:49:51,998 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Old Name', 10.0, 5.0, 15)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:40,534 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "orders_products" does not exist
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-16 16:50:40,545 - my_logger - ERROR - Unexpected error occurred: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:789]> got Future <Future pending cb=[Protocol._on_waiter_completed()]> attached to a different loop
+2025-02-16 16:50:40,554 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:40,563 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:40,581 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:40,591 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:40,601 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('To Delete', 50.0, 20.0, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:40,611 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Old Name', 10.0, 5.0, 15)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:47,607 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "orders_products" does not exist
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-16 16:50:47,621 - my_logger - ERROR - Unexpected error occurred: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:789]> got Future <Future pending cb=[Protocol._on_waiter_completed()]> attached to a different loop
+2025-02-16 16:50:47,630 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:47,640 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:47,660 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:47,670 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:47,681 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('To Delete', 50.0, 20.0, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 16:50:47,694 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Old Name', 10.0, 5.0, 15)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 21:24:52,264 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "orders_products" does not exist
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-16 21:24:52,274 - my_logger - ERROR - Unexpected error occurred: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:754]> got Future <Future pending cb=[Protocol._on_waiter_completed()]> attached to a different loop
+2025-02-16 21:24:52,283 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 21:24:52,293 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 21:24:52,313 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 21:24:52,323 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 21:24:52,332 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('To Delete', 50.0, 20.0, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 21:24:52,342 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Old Name', 10.0, 5.0, 15)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-16 22:12:02,633 - my_logger - ERROR - Unexpected error occurred: time data '13.11.2022' does not match format '%Y-%m-%d'
+2025-02-21 10:46:00,470 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 10:46:00,478 - my_logger - ERROR - Unexpected error occurred: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:754]> got Future <Future pending cb=[Protocol._on_waiter_completed()]> attached to a different loop
+2025-02-21 10:46:00,485 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:00,492 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:00,506 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:00,514 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:00,521 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('To Delete', 50.0, 20.0, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:00,530 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Old Name', 10.0, 5.0, 15)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:20,365 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 10:46:20,374 - my_logger - ERROR - Unexpected error occurred: Task <Task pending name='starlette.middleware.base.BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro' coro=<BaseHTTPMiddleware.__call__.<locals>.call_next.<locals>.coro() running at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/starlette/middleware/base.py:151> cb=[TaskGroup._spawn.<locals>.task_done() at /home/user/work/TestTask/.venv/lib/python3.10/site-packages/anyio/_backends/_asyncio.py:754]> got Future <Future pending cb=[Protocol._on_waiter_completed()]> attached to a different loop
+2025-02-21 10:46:20,382 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:20,390 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:20,404 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:20,412 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:20,419 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('To Delete', 50.0, 20.0, 5)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 10:46:20,427 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.InterfaceError) <class 'asyncpg.exceptions._base.InterfaceError'>: cannot perform operation: another operation is in progress
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Old Name', 10.0, 5.0, 15)]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+2025-02-21 11:20:51,730 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 11:20:51,737 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 11:20:51,742 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 11:20:51,750 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 11:20:51,788 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 21, 10, 20, 51, 780919))}
+
+2025-02-21 15:32:38,634 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 15:32:38,646 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 15:32:38,655 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 15:32:38,669 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: insert or update on table "orders_products" violates foreign key constraint "orders_products_order_id_fkey"
+DETAIL:  Key (order_id)=(1) is not present in table "orders".
+[SQL: INSERT INTO orders_products (created_at, order_id, product_id, amount) VALUES (now(), $1::BIGINT, $2::BIGINT, $3::INTEGER) RETURNING orders_products.id, orders_products.created_at, orders_products.order_id, orders_products.product_id, orders_products.amount]
+[parameters: (1, 1, 5)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 15:32:38,734 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 21, 14, 32, 38, 720312))}
+
+2025-02-21 15:38:31,822 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedFunctionError'>: function create_order_with_products(unknown, unknown, unknown) does not exist
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+            ]
+[parameters: ([0], [0], datetime.datetime(2025, 2, 21, 15, 38, 31, 794914))]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-21 15:40:13,084 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedFunctionError'>: function create_order_with_products(unknown, unknown, unknown) does not exist
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+            ]
+[parameters: ([1], [10], datetime.datetime(2025, 2, 21, 15, 40, 13, 81977))]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-21 16:08:14,754 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:10:02,476 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:10:16,898 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:11:40,556 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:12:50,613 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=2, product_id=1, amount=10, id=2, created_at=datetime.datetime(2025, 2, 21, 16, 12, 50, 587338))}
+
+2025-02-21 16:18:10,270 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=2, product_id=1, amount=10, id=2, created_at=datetime.datetime(2025, 2, 21, 16, 18, 10, 246366))}
+
+2025-02-21 16:19:53,404 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:25:00,656 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:27:20,383 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:39:24,034 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=2, product_id=1, amount=10, id=2, created_at=datetime.datetime(2025, 2, 21, 16, 39, 24, 6792))}
+
+2025-02-21 16:43:15,825 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:44:27,036 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:51:05,971 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=2, product_id=1, amount=10, id=2, created_at=datetime.datetime(2025, 2, 21, 16, 51, 5, 941246))}
+
+2025-02-21 16:56:06,579 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 16:57:55,528 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 17:03:15,635 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 17:03:15,640 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-21 17:10:01,215 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-22 09:46:43,641 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-22 09:46:43,716 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=1, product_id=1, amount=5, id=7, created_at=datetime.datetime(2025, 2, 22, 8, 46, 43, 709707))}
+
+2025-02-22 09:46:43,750 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=4, created_at=datetime.datetime(2025, 2, 22, 8, 46, 43, 745319))}
+
+2025-02-22 10:09:58,258 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=4, product_id=4, amount=5, id=8, created_at=datetime.datetime(2025, 2, 22, 9, 9, 58, 249432))}
+
+2025-02-22 10:11:10,523 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=4, product_id=4, amount=5, id=8, created_at=datetime.datetime(2025, 2, 22, 9, 11, 10, 515064))}
+
+2025-02-22 10:16:42,872 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=4, product_id=4, amount=5, id=8, created_at=datetime.datetime(2025, 2, 22, 9, 16, 42, 864748))}
+
+2025-02-22 10:18:19,529 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=4, product_id=4, amount=5, id=8, created_at=datetime.datetime(2025, 2, 22, 9, 18, 19, 522906))}
+
+2025-02-22 10:19:04,532 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=4, product_id=4, amount=5, id=8, created_at=datetime.datetime(2025, 2, 22, 9, 19, 4, 526579))}
+
+2025-02-22 10:20:14,323 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=4, product_id=4, amount=5, id=8, created_at=datetime.datetime(2025, 2, 22, 9, 20, 14, 318880))}
+
+2025-02-22 10:21:52,442 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=4, product_id=4, amount=5, id=8, created_at=datetime.datetime(2025, 2, 22, 9, 21, 52, 437027))}
+
+2025-02-22 10:33:00,727 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 33, 0, 721795))}
+
+2025-02-22 10:34:15,746 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 34, 15, 741446))}
+
+2025-02-22 10:36:13,252 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 36, 13, 246530))}
+
+2025-02-22 10:37:28,871 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 37, 28, 866668))}
+
+2025-02-22 10:40:30,065 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 40, 30, 59546))}
+
+2025-02-22 10:42:54,703 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 42, 54, 690117))}
+
+2025-02-22 10:45:00,525 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 45, 0, 514796))}
+
+2025-02-22 10:53:30,811 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 53, 30, 801300))}
+
+2025-02-22 10:56:04,387 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 56, 4, 380376))}
+
+2025-02-22 10:57:20,107 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 57, 20, 97845))}
+
+2025-02-22 10:58:42,642 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 9, 58, 42, 635336))}
+
+2025-02-22 12:03:48,551 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=3, created_at=datetime.datetime(2025, 2, 22, 11, 3, 48, 544587))}
+
+2025-02-23 12:13:43,576 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:13:43,676 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 13, 43, 670848))}
+
+2025-02-23 12:13:43,716 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 13, 43, 707676))}
+
+2025-02-23 12:19:10,140 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:19:10,241 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 19, 10, 234957))}
+
+2025-02-23 12:19:10,281 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 19, 10, 274166))}
+
+2025-02-23 12:20:21,795 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:20:21,893 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 20, 21, 887729))}
+
+2025-02-23 12:20:21,928 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 20, 21, 921928))}
+
+2025-02-23 12:23:08,773 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:23:08,872 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 23, 8, 866582))}
+
+2025-02-23 12:23:08,910 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 23, 8, 903579))}
+
+2025-02-23 12:31:09,286 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:31:09,386 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 31, 9, 380804))}
+
+2025-02-23 12:31:09,423 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 31, 9, 416427))}
+
+2025-02-23 12:35:37,832 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:35:37,934 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 35, 37, 929146))}
+
+2025-02-23 12:35:37,972 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 35, 37, 965823))}
+
+2025-02-23 12:40:37,883 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:40:37,987 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 40, 37, 980428))}
+
+2025-02-23 12:40:38,028 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 40, 38, 19777))}
+
+2025-02-23 12:46:30,060 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:46:30,172 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 46, 30, 164651))}
+
+2025-02-23 12:46:30,209 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 46, 30, 203658))}
+
+2025-02-23 12:47:26,048 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:47:26,151 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 47, 26, 145381))}
+
+2025-02-23 12:47:26,189 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 47, 26, 182544))}
+
+2025-02-23 12:55:55,369 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:55:55,470 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 55, 55, 463333))}
+
+2025-02-23 12:55:55,506 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 55, 55, 500094))}
+
+2025-02-23 12:59:36,620 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 12:59:36,724 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 11, 59, 36, 718738))}
+
+2025-02-23 12:59:36,761 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 11, 59, 36, 754753))}
+
+2025-02-23 13:03:31,252 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:03:31,354 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 3, 31, 347298))}
+
+2025-02-23 13:03:31,393 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 3, 31, 386140))}
+
+2025-02-23 13:05:26,597 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:05:26,695 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 5, 26, 689701))}
+
+2025-02-23 13:05:26,730 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 5, 26, 723525))}
+
+2025-02-23 13:07:37,438 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:07:37,540 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 7, 37, 533570))}
+
+2025-02-23 13:07:37,578 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 7, 37, 571266))}
+
+2025-02-23 13:14:55,372 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:14:55,469 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 14, 55, 462292))}
+
+2025-02-23 13:14:55,509 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 14, 55, 500481))}
+
+2025-02-23 13:15:08,426 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:15:08,533 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 15, 8, 526883))}
+
+2025-02-23 13:15:08,571 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 15, 8, 564653))}
+
+2025-02-23 13:16:14,487 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:16:14,587 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 16, 14, 580686))}
+
+2025-02-23 13:16:14,622 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 16, 14, 616209))}
+
+2025-02-23 13:20:34,629 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:20:34,730 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 20, 34, 723589))}
+
+2025-02-23 13:20:34,767 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 20, 34, 761310))}
+
+2025-02-23 13:21:19,510 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,553 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedFunctionError'>: function create_order_with_products(unknown, unknown, unknown) does not exist
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+            ]
+[parameters: ([1], [10], datetime.datetime(2025, 2, 23, 13, 21, 19, 552252))]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,560 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedFunctionError'>: function create_order_with_products(unknown, unknown, unknown) does not exist
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+            ]
+[parameters: ([1], [10], datetime.datetime(2025, 2, 23, 13, 21, 19, 559889))]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,568 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedFunctionError'>: function create_order_with_products(unknown, unknown, unknown) does not exist
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[SQL: 
+            SELECT create_order_with_products(
+                $1, 
+                $2, 
+                $3
+            ) AS order_id;
+            ]
+[parameters: ([1], [10], datetime.datetime(2025, 2, 23, 13, 21, 19, 567186))]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,577 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "orders" does not exist
+[SQL: SELECT count(*) AS count_1 
+FROM orders]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,590 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,602 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,612 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,624 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,635 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "orders_products" does not exist
+[SQL: SELECT count(*) AS count_1 
+FROM orders_products]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,647 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,657 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Test Product', 100.0, 50.0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,668 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('To Delete', 50.0, 20.0, 5)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,677 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER) RETURNING products.id, products.created_at, products.product_name, products.price, products.cost, products.stock]
+[parameters: ('Old Name', 10.0, 5.0, 15)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,689 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: INSERT INTO products (created_at, product_name, price, cost, stock) VALUES (now(), $1::VARCHAR, $2::NUMERIC(15, 2), $3::NUMERIC(15, 2), $4::INTEGER), (now(), $5::VARCHAR, $6::NUMERIC(15, 2), $7::NUMERIC(15, 2), $8::INTEGER)]
+[parameters: ('Product 1', 10.0, 5.0, 50, 'Product 2', 20.0, 10.0, 30)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:19,698 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "products" does not exist
+[SQL: SELECT count(*) AS count_1 
+FROM products]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-02-23 13:21:42,232 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:21:42,330 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 21, 42, 324546))}
+
+2025-02-23 13:21:42,366 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 21, 42, 359431))}
+
+2025-02-23 13:24:26,706 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:24:26,811 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 24, 26, 804981))}
+
+2025-02-23 13:24:26,846 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 24, 26, 840566))}
+
+2025-02-23 13:36:37,949 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:36:38,046 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 36, 38, 40589))}
+
+2025-02-23 13:36:38,083 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 36, 38, 76350))}
+
+2025-02-23 13:42:21,564 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:42:21,665 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 42, 21, 659031))}
+
+2025-02-23 13:42:21,705 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 42, 21, 697080))}
+
+2025-02-23 13:44:01,760 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:44:01,899 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 44, 1, 891595))}
+
+2025-02-23 13:44:01,953 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 44, 1, 944269))}
+
+2025-02-23 13:44:25,653 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:44:25,758 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 44, 25, 752550))}
+
+2025-02-23 13:44:25,795 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 44, 25, 788219))}
+
+2025-02-23 13:45:20,377 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:45:20,480 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 45, 20, 473540))}
+
+2025-02-23 13:45:20,518 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 45, 20, 510930))}
+
+2025-02-23 13:48:33,617 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:48:33,724 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 48, 33, 718337))}
+
+2025-02-23 13:48:33,760 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 48, 33, 754148))}
+
+2025-02-23 13:49:49,660 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:49:49,765 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 49, 49, 758449))}
+
+2025-02-23 13:49:49,805 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 49, 49, 797482))}
+
+2025-02-23 13:52:58,550 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:52:58,690 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 52, 58, 681677))}
+
+2025-02-23 13:52:58,740 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 52, 58, 731423))}
+
+2025-02-23 13:53:15,573 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 13:53:15,676 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 12, 53, 15, 670163))}
+
+2025-02-23 13:53:15,716 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 12, 53, 15, 709009))}
+
+2025-02-23 14:07:02,860 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 14:07:02,964 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 13, 7, 2, 957868))}
+
+2025-02-23 14:07:03,003 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 13, 7, 2, 995960))}
+
+2025-02-23 14:08:18,636 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 14:08:18,742 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 13, 8, 18, 735695))}
+
+2025-02-23 14:08:18,780 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 13, 8, 18, 772964))}
+
+2025-02-23 14:59:45,083 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 14:59:45,189 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 13, 59, 45, 182562))}
+
+2025-02-23 14:59:45,236 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 13, 59, 45, 226414))}
+
+2025-02-23 15:00:49,174 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 15:00:49,307 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 14, 0, 49, 297137))}
+
+2025-02-23 15:00:49,361 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 14, 0, 49, 349640))}
+
+2025-02-23 15:02:10,957 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 15:02:11,056 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 14, 2, 11, 50192))}
+
+2025-02-23 15:02:11,092 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 14, 2, 11, 85292))}
+
+2025-02-23 15:04:31,805 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 15:04:31,912 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 14, 4, 31, 906700))}
+
+2025-02-23 15:04:31,950 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 14, 4, 31, 944548))}
+
+2025-02-23 15:05:32,629 - my_logger - ERROR - Unexpected error occurred: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: update or delete on table "orders" violates foreign key constraint "orders_products_order_id_fkey" on table "orders_products"
+DETAIL:  Key (id)=(3) is still referenced from table "orders_products".
+[SQL: DELETE FROM orders WHERE orders.id = $1::BIGINT RETURNING orders.id, orders.created_at]
+[parameters: (3,)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-23 15:05:32,732 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': OrderProductsSchema(order_id=7, product_id=5, amount=5, id=11, created_at=datetime.datetime(2025, 2, 23, 14, 5, 32, 726751))}
+
+2025-02-23 15:05:32,770 - my_logger - ERROR - Unexpected error occurred: 1 validation errors:
+  {'type': 'int_type', 'loc': ('response',), 'msg': 'Input should be a valid integer', 'input': ProductSchema(product_name='To Delete', price=50.0, cost=20.0, stock=5, id=8, created_at=datetime.datetime(2025, 2, 23, 14, 5, 32, 764282))}
+
